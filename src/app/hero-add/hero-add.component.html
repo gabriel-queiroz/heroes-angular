@@ -1,0 +1,38 @@
+
+
+<div class="botao-initial">
+
+    
+
+    <button 
+    
+    [class.button-selected]="formAdicionar"
+
+    
+    
+    (click)="formadicionar1()" 
+    
+    [disabled]="formAdicionar"
+
+    class="create-button" >adicionar Herói</button>
+
+
+</div>
+
+
+<div class="create"  *ngIf="formAdicionar">
+
+<label  class="id" for="">Id :</label>
+<input [(ngModel)]="hero.id" type="text"> <br><br>
+
+
+
+<label for="">Nome :</label>
+<input [(ngModel)]="hero.nome" type="text"> <br><br>
+
+
+
+<button class="create-button" (click)="adicionar()" >Adicionar</button>
+<button (click)="formadicionar1()" class="create-button" >Cancelar</button>
+
+</div>

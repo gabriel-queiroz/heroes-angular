@@ -1,0 +1,17 @@
+<div  *ngIf="hero" class="details">
+  id : {{hero.id}} <br>
+  O heroi é :  {{hero.nome | uppercase }} <br> <br>
+
+  <label> nome : </label> 
+
+  <input class="form-control"
+         
+         placeholder="hero"
+         type="text"
+
+         (blur)="ocultarDetails()"  
+         [(ngModel)]="hero.nome" 
+          
+         >
+
+</div>

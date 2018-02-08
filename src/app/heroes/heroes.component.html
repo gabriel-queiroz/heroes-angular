@@ -1,0 +1,40 @@
+<div>
+
+    <app-hero-add (clicked)="addHero($event)" ></app-hero-add>
+
+</div>
+
+<div>
+    <h2>Heróis</h2>
+
+    <ul class="herois">
+
+        <li *ngFor="let hero of heroes" 
+            [class.selected]="hero == selectedHero" 
+            >
+            <span class="badge">{{hero.id}}</span>{{hero.nome}}
+            <button 
+                    (click)="removeHero(hero)" 
+                    class="icon remove material-icons">
+                    &#xE14C;
+            </button>
+            <button 
+
+                    
+                    [class.edit-selected]="hero == selectedHero" 
+                    (click)="onSelect(hero)"
+                    class="icon edit material-icons">
+
+                    
+
+                    &#xE3C9;
+            </button>
+        </li>
+
+    </ul>
+</div>
+
+<app-hero-detail 
+    (mudarValor)="onSelect($event)" 
+    [hero]="selectedHero">
+</app-hero-detail>

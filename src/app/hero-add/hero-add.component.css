@@ -1,0 +1,91 @@
+*{box-sizing: border-box;
+
+  
+}
+
+.create {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    outline-color: #3a7196;
+    box-shadow: 0px 0px 1px  #607d8b;
+  }
+
+  input[type="text"]:focus{
+    transition: all 3s;
+    outline-color: #3a7196;
+    box-shadow: 0px 0px 5px  #607d8b;
+  }
+
+  .id{
+
+    padding-right: 30px;
+
+  }
+
+  .create-button{
+
+    background-color:  #607d8b;
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    cursor:pointer;
+  }
+
+  .create-button:hover{
+
+    color: #607d8b;
+    border-color: #607d8b;
+    background-color: #fff;
+
+  }
+  
+
+  .create-button:active{
+
+    outline: none;
+    outline-width: 0;
+    position: relative;
+    top:3px;
+    transition: top .2s;
+
+  }
+
+  .create-button:focus{
+
+    outline: none ;
+
+  }
+
+  .botao-initial{
+
+    margin: 20px auto;
+    width:90%;
+
+  }
+
+
+  .button-selected{
+
+    transition: all .3s;
+    background-color:white;
+    color:#607d8b;
+    border: 2px solid #607d8b;
+    
+  }
+
+  
